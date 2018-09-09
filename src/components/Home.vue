@@ -36,12 +36,9 @@
 
 <script>
   export default {
-    data() {
-      return {
-        meetups: [
-          {imageUrl: 'https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1517869165%2Fsakura-temple-pagoda-japan-VISITJP0218.jpg', id: 'adfasdfasdf123', title: 'Meetup in Japan'},
-          {imageUrl: 'https://sonicjobs.co.uk/wp-content/uploads/2017/11/how-to-find-a-job-in-london-quickly.jpg', id: 'sudhfausfdf234', title: 'Meetup in London'}
-        ]
+    computed: {
+      meetups() {
+        return this.$store.getters.loadedMeetups
       }
     },
     methods: {

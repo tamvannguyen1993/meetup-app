@@ -12,7 +12,11 @@ import {
   transitions,
   VCarousel,
   VCard,
-  VImg
+  VImg,
+  VTextField,
+  VDatePicker,
+  VTimePicker,
+  VAlert
 } from 'vuetify'
 import 'vuetify/src/stylus/app.styl'
 
@@ -29,7 +33,11 @@ Vue.use(Vuetify, {
     transitions,
     VCarousel,
     VCard,
-    VImg
+    VImg,
+    VTextField,
+    VDatePicker,
+    VTimePicker,
+    VAlert
   },
   theme: {
     primary: '#ee44aa',

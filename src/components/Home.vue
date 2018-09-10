@@ -8,7 +8,7 @@
         <v-btn large router to="/meetup/new">Orginize Meetup</v-btn>
       </v-flex>
     </v-layout>
-    <v-layout row wrap>
+    <v-layout row wrap v-if="!loading">
       <v-flex xs12>
         <v-carousel style="cursor: pointer;">
           <v-carousel-item
@@ -39,6 +39,9 @@
     computed: {
       meetups() {
         return this.$store.getters.loadedMeetups
+      },
+      loading() {
+        return this.$store.getters.loading
       }
     },
     methods: {

@@ -16,7 +16,10 @@ import {
   VTextField,
   VDatePicker,
   VTimePicker,
-  VAlert
+  VAlert,
+  VDialog,
+  VDivider,
+  VProgressCircular
 } from 'vuetify'
 import 'vuetify/src/stylus/app.styl'
 
@@ -37,7 +40,11 @@ Vue.use(Vuetify, {
     VTextField,
     VDatePicker,
     VTimePicker,
-    VAlert
+    VAlert,
+    VDialog,
+    VDivider,
+    VProgressCircular
+    
   },
   theme: {
     primary: '#ee44aa',
